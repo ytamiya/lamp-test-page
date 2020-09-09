@@ -1,0 +1,73 @@
+/* 共通のレイアウト */
+
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+  /* ---------------- page1 ---------------- */
+  .features-box {
+    width: 100%;
+  }
+
+  .service-column {
+    width: 45%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 40px;
+  }
+}
+
+/* モバイル向けレイアウト */
+@media all and (max-width: 670px) {
+
+.header-menu-right{
+  display: none;
+}
+
+.service-column {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 40px;
+  }
+
+.top-description {
+  margin-bottom: 20px;
+}
+
+.top-description h2 {
+  font-family: futura-heavy;
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  color: #FFF;
+  text-align:left;
+
+}
+
+
+.top-description-black {
+  margin-bottom: 20px;
+}
+
+.top-description-black h2 {
+  font-family: futura-heavy;
+  background-color: #000;
+  background-size: cover;
+  font-size: 60px;
+  font-weight: 800;
+  color: #FFF;
+  text-align:left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+
+.company-column{
+  display: inline-block;
+  width: 100%;
+  padding: 15px 15px 20px 15px;
+  margin-top: 20px;
+}
+
+
+}

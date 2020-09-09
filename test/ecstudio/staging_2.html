@@ -1,0 +1,628 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brocante Inc.</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <!-- <link rel="stylesheet" href="../../style.css"> -->
+    <link rel="stylesheet" href="../../responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+<div id="systemLpForm">
+<div id="head"></div>
+<div class="myPage">
+<div class="myParent">
+    <section class="section01">
+                <h2 class="heading02 lphead02">商品情報（商品を選択してから、下記会員登録をご入力ください。）</h2>
+        <div class="sysLoginForm">
+            <div class="itemSelect">
+            商品：<div class="submust">&nbsp;</div>
+            <select id="item_code" name="item_code">
+              <option value="">--選択してください--</option>
+                            <option value="hmb-tablet36000_regular" sales_limit="5" available_regular_cycle="30,60" delivery_term_from="2019-06-14" delivery_term_to="2019-06-26" parcel_delivery_flg="0" delivery_charge_flg="0" post_delivery_charge_flg="0" first_post_delivery_charge_flg="1" nekopost_flg="0" price1="5000" regular_first_price1="4000" price2="5000" regular_first_price2="3750" price3="5000" regular_first_price3="3500" price4="5000" regular_first_price4="3500" price5="5000" regular_first_price5="3500" price6="5000" regular_first_price6="3500" price7="5000" regular_first_price7="3500" price8="5000" regular_first_price8="3500" price9="5000" regular_first_price9="3500" price10="5000" regular_first_price10="3500">
+                【定期】HMBタブレット36000
+              </option>
+                            <option value="hmb-tablet36000" sales_limit="5" available_regular_cycle="30,60" delivery_term_from="2019-06-14" delivery_term_to="2019-06-26" parcel_delivery_flg="0" delivery_charge_flg="0" post_delivery_charge_flg="0" first_post_delivery_charge_flg="1" nekopost_flg="0" price1="5000" regular_first_price1="4000" price2="5000" regular_first_price2="3750" price3="5000" regular_first_price3="3500" price4="5000" regular_first_price4="3500" price5="5000" regular_first_price5="3500" price6="5000" regular_first_price6="3500" price7="5000" regular_first_price7="3500" price8="5000" regular_first_price8="3500" price9="5000" regular_first_price9="3500" price10="5000" regular_first_price10="3500">
+                【都度】HMBタブレット36000
+              </option>
+                          </select>
+            </div>
+            <div class="itemQuant">
+            数量：<span class="submust">&nbsp;</span>
+            <select id="quantity" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+            </div>
+            <div id="purchaseFrequencyHead" class="deliverySelect" style="display: block;">
+            <span class="first_delivery">お届け開始日: </span>
+                <select id="first_purchase_date" class="first_deliveryDate" name="first_purchase_date"><option value="2019-06-14">2019-06-14</option><option value="2019-06-15">2019-06-15</option><option value="2019-06-16">2019-06-16</option><option value="2019-06-17">2019-06-17</option><option value="2019-06-18">2019-06-18</option><option value="2019-06-19">2019-06-19</option><option value="2019-06-20">2019-06-20</option><option value="2019-06-21">2019-06-21</option><option value="2019-06-22">2019-06-22</option><option value="2019-06-23">2019-06-23</option><option value="2019-06-24">2019-06-24</option><option value="2019-06-25">2019-06-25</option><option value="2019-06-26">2019-06-26</option></select>
+                から
+                <span class="cycle_span"><select id="purchase_frequency" name="purchase_frequency"><option value="30">30</option><option value="60">60</option></select>
+                日間隔でお届け</span>
+            <div class="cycle">
+                <ul class="cycle_date">
+                    <li><div class="date_label">初回</div><div id="first_date">2019-06-14</div></li>
+                    <li><div class="date_label">２回目</div><div id="second_date">2019-07-14</div></li>
+                </ul>
+            	<div class="DM_attention" style="display: block;">※ ポスト投函の場合は目安日となります。</div>
+            </div>
+        </div>
+        <div id="deliveryDateHead" class="deliverySelect" style="display: none;">
+            <span class="first_delivery">お届け日: </span>
+            <select id="delivery_date" class="deliveryDate" name="delivery_date"><option value="2019-06-14">2019-06-14</option><option value="2019-06-15">2019-06-15</option><option value="2019-06-16">2019-06-16</option><option value="2019-06-17">2019-06-17</option><option value="2019-06-18">2019-06-18</option><option value="2019-06-19">2019-06-19</option><option value="2019-06-20">2019-06-20</option><option value="2019-06-21">2019-06-21</option><option value="2019-06-22">2019-06-22</option><option value="2019-06-23">2019-06-23</option><option value="2019-06-24">2019-06-24</option><option value="2019-06-25">2019-06-25</option><option value="2019-06-26">2019-06-26</option></select>
+            <span class="DM_attention" style="display: inline;">※ ポスト投函の場合は目安日となります。</span>
+            <!-- /inputBox01 -->
+        </div>
+                </div>
+    </section>
+</div>
+</div>
+
+<form method="POST" action="https://finebase.jp/hmb_tab.html" accept-charset="UTF-8" class="form_payment01" id="landingLoginForm" autocomplete="off" spellcheck="false"><input name="_token" type="hidden" value="klwYSuDT7UmLfxZJjzTYhPUAETLo944e3aIByKTU">
+<script type="text/javascript">
+$(function(){
+  $('#register').change(function(){
+    $('.lpLogin').toggle($(this).is(":checked"));
+  }).trigger("change");
+})
+</script>
+  <div class="loginFormMain02 login-background">
+    <p class="register_btn">
+      <input id="register" class="toggleCheckbox02" checked="checked" name="register" type="checkbox" value="1">
+      <label for="register">会員の方はこちら</label>
+    </p>
+    <div class="lpLogin" style="display: block;">
+    <input class="item_code" name="item_code" type="hidden" value="hmb-tablet36000_regular">
+    <input class="quantity" name="quantity" type="hidden" value="3">
+    <input class="first_purchase_date" name="first_purchase_date" type="hidden" value="2019-06-14">
+    <input class="purchase_frequency" name="purchase_frequency" type="hidden" value="30">
+    <input class="delivery_date" name="delivery_date" type="hidden" value="2019-06-14">
+    <input id="order_type_member" name="order_type" type="hidden" value="2">
+    <input name="path" type="hidden" value="hmb_tab.html">
+    <link media="all" type="text/css" rel="stylesheet" href="https://finebase.jp/css/cmn_style.css">
+
+<link media="all" type="text/css" rel="stylesheet" href="https://finebase.jp/css/cmn_layout.css">
+
+<div class="sysLoginForm sysLoginForm02">
+<table class="table_form01">
+    <tbody>
+        <tr>
+        <th>
+                <span class="title01">メールアドレス</span>
+                <span class="remind01">
+                        <span class="genre01">[半角英数]</span>
+                </span>
+        </th>
+        <td>
+                <div class="inputBox01">
+                       <input class="input_text01" placeholder="メールアドレス" name="email1_landing" type="email">
+                <!-- /inputBox01 --></div>
+        </td>
+        </tr>
+        <tr>
+        <th>
+                <span class="title01">パスワード</span>
+                <span class="remind01">
+                        <span class="genre01">[半角英数]</span>
+                </span>
+        </th>
+        <td>
+                <div class="inputBox01">
+                        <input class="input_pass01" placeholder="パスワード" name="password_landing" type="password" value="">
+                <!-- /inputBox01 --></div>
+        </td>
+        </tr>
+    </tbody>
+</table><div class="buttonBox01">
+    <div class="submitBox01">
+           <input name="login" id="login" class="submit01" type="submit" value="ログイン">
+    <!-- /submitBox01 --></div>
+    <p class="forgotPass01">
+        <input name="remind" id="remind" class="buttonSendPass" type="submit" value=">>&nbsp;会員ID・パスワードを忘れた場合">
+    </p>
+<!-- /buttonBox01 --></div>
+</div>
+    </div>  
+  </div>
+</form>
+
+<script src="https://finebase.jp/js/user.js"></script>
+
+<link media="all" type="text/css" rel="stylesheet" href="https://finebase.jp/css/user.css">
+
+<script src="https://finebase.jp/js/jquery.autoKana.js"></script>
+
+<link media="all" type="text/css" rel="stylesheet" href="https://finebase.jp/css/validationEngine.jquery.css">
+
+<script src="https://finebase.jp/js/jquery.validationEngine-ja.js"></script>
+
+<script src="https://finebase.jp/js/jquery.validationEngine.js"></script>
+
+<link media="all" type="text/css" rel="stylesheet" href="https://finebase.jp/css/zipaddr.css">
+
+<script src="https://zipaddr.github.io/zipaddr3.js" charset="UTF-8"></script>
+<script type="text/javascript">
+$(function() {
+    $.fn.autoKana('input[name="last_name"]', 'input[name="last_name_kana"]', {katakana:true});
+    $.fn.autoKana('input[name="first_name"]', 'input[name="first_name_kana"]', {katakana:true});
+});
+
+$(function(){
+   jQuery("#signUpForm").validationEngine();
+});
+</script>
+<form method="POST" action="https://finebase.jp/hmb_tab.html" accept-charset="UTF-8" class="form_payment01" id="landingSignUpForm" autocomplete="off" spellcheck="false"><input name="_token" type="hidden" value="klwYSuDT7UmLfxZJjzTYhPUAETLo944e3aIByKTU">
+<div class="signUp">
+    <div class="myPage">
+        <div class="myParent">
+            <h2 class="heading02">新規会員登録（はじめてご利用のお客様）</h2>
+            <input class="item_code" name="item_code" type="hidden" value="hmb-tablet36000_regular">
+<input class="quantity" name="quantity" type="hidden" value="3">
+<input class="first_purchase_date" name="first_purchase_date" type="hidden" value="2019-06-14">
+<input class="purchase_frequency" name="purchase_frequency" type="hidden" value="30">
+<input class="delivery_date" name="delivery_date" type="hidden" value="2019-06-14">
+<input name="path" type="hidden" value="hmb_tab.html">
+<script type="text/javascript">
+$(function(){
+   jQuery("#deliveryInfo").validationEngine();
+});
+</script>
+<table class="myClubInfoEdit lpIpadTable" id="deliveryInfo">
+    <tbody>
+        <tr>
+            <th>
+                <label for="last_name" class="required">お名前<span class="subheader">[全角]</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <input class="width150 input_text01 validate[required]" placeholder="姓）" name="last_name" type="text" id="last_name" style="background-color: rgb(255, 221, 221);">&nbsp;
+                <input class="width150 input_text01 validate[required]" placeholder="名）" name="first_name" type="text" style="background-color: rgb(255, 221, 221);">
+                            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="last_name_kana" class="required">フリガナ<span class="subheader">[全角カナ]</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <input class="width150 input_text01 validate[required]" placeholder="セイ）" name="last_name_kana" type="text" id="last_name_kana" style="background-color: rgb(255, 221, 221);">&nbsp;
+                <input class="width150 input_text01 validate[required]" placeholder="メイ）" name="first_name_kana" type="text" style="background-color: rgb(255, 221, 221);">
+                            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="sex_type" class="required">性別</label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input" style="background-color: rgb(255, 221, 221);">
+                                    <input class="validate[required]" name="sex_type" type="radio" value="1" id="sex_type">&nbsp;男性
+                                    <input class="validate[required]" name="sex_type" type="radio" value="2" id="sex_type">&nbsp;女性
+                                            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="birthday" class="required">生年月日（西暦）</label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <select class="width100 input_text01 w70_sp validate[required,custom[number]]" id="birth_year" name="birth_year"><option value="">-- 選択してください --</option><option value="1900">1900</option><option value="1901">1901</option><option value="1902">1902</option><option value="1903">1903</option><option value="1904">1904</option><option value="1905">1905</option><option value="1906">1906</option><option value="1907">1907</option><option value="1908">1908</option><option value="1909">1909</option><option value="1910">1910</option><option value="1911">1911</option><option value="1912">1912</option><option value="1913">1913</option><option value="1914">1914</option><option value="1915">1915</option><option value="1916">1916</option><option value="1917">1917</option><option value="1918">1918</option><option value="1919">1919</option><option value="1920">1920</option><option value="1921">1921</option><option value="1922">1922</option><option value="1923">1923</option><option value="1924">1924</option><option value="1925">1925</option><option value="1926">1926</option><option value="1927">1927</option><option value="1928">1928</option><option value="1929">1929</option><option value="1930">1930</option><option value="1931">1931</option><option value="1932">1932</option><option value="1933">1933</option><option value="1934">1934</option><option value="1935">1935</option><option value="1936">1936</option><option value="1937">1937</option><option value="1938">1938</option><option value="1939">1939</option><option value="1940">1940</option><option value="1941">1941</option><option value="1942">1942</option><option value="1943">1943</option><option value="1944">1944</option><option value="1945">1945</option><option value="1946">1946</option><option value="1947">1947</option><option value="1948">1948</option><option value="1949">1949</option><option value="1950">1950</option><option value="1951">1951</option><option value="1952">1952</option><option value="1953">1953</option><option value="1954">1954</option><option value="1955">1955</option><option value="1956">1956</option><option value="1957">1957</option><option value="1958">1958</option><option value="1959">1959</option><option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option value="1980" selected="selected">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option></select>&nbsp;年
+                <select class="width100 w60_sp select01 validate[required]" id="birth_month" name="birth_month" style="background-color: rgb(255, 221, 221);"><option value="" selected="selected">-- 選択してください --</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>&nbsp;月&nbsp;
+                <select class="width100 w60_sp select01 validate[required]" id="birth_day" name="birth_day" style="background-color: rgb(255, 221, 221);"><option value="" selected="selected">-- 選択してください --</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>&nbsp;日&nbsp;
+                                                            </td>
+        </tr>
+        <tr>
+          <th>ご住所<span class="subheader"></span></th>
+          <td class="submust">&nbsp;</td>
+            <td class="input">
+                <div class="address">
+                    <span class="spText bold_sp"><label for="zip_code1" class="required">郵便番号<span class="subheader"></span></label></span>
+                    <input class="width100 input_text01 w70_sp validate[required,custom[number]]" id="zip" name="zip_code1" type="tel" placeholder="住所自動入力" style="background-color: rgb(255, 221, 221);">&nbsp;-
+                    <input class="width150 input_text01 w70_sp validate[required,custom[number]]" id="zip1" name="zip_code2" type="tel" maxlength="4" style="background-color: rgb(255, 221, 221);">
+                                    </div>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="prefecture_code" class="required"><span class="subheaderaddress">都道府県名</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <select id="pref" class="select02 validate[required]" name="prefecture_code" style="background-color: rgb(255, 221, 221);"><option value="" selected="selected">-- 選択してください --</option><option value="1">北海道</option><option value="2">青森県</option><option value="3">岩手県</option><option value="4">宮城県</option><option value="5">秋田県</option><option value="6">山形県</option><option value="7">福島県</option><option value="8">茨城県</option><option value="9">栃木県</option><option value="10">群馬県</option><option value="11">埼玉県</option><option value="12">千葉県</option><option value="13">東京都</option><option value="14">神奈川県</option><option value="15">新潟県</option><option value="16">富山県</option><option value="17">石川県</option><option value="18">福井県</option><option value="19">山梨県</option><option value="20">長野県</option><option value="21">岐阜県</option><option value="22">静岡県</option><option value="23">愛知県</option><option value="24">三重県</option><option value="25">滋賀県</option><option value="26">京都府</option><option value="27">大阪府</option><option value="28">兵庫県</option><option value="29">奈良県</option><option value="30">和歌山県</option><option value="31">鳥取県</option><option value="32">島根県</option><option value="33">岡山県</option><option value="34">広島県</option><option value="35">山口県</option><option value="36">徳島県</option><option value="37">香川県</option><option value="38">愛媛県</option><option value="39">高知県</option><option value="40">福岡県</option><option value="41">佐賀県</option><option value="42">長崎県</option><option value="43">熊本県</option><option value="44">大分県</option><option value="45">宮崎県</option><option value="46">鹿児島県</option><option value="47">沖縄県</option></select>&nbsp;
+                            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="address1" class="required"><span class="subheaderaddress">市区町村</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <input id="city" class="width90p input_text01 validate[required]" placeholder="例：千代田区" name="address1" type="text" style="background-color: rgb(255, 221, 221);">&nbsp;
+                            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="address2" class="required"><span class="subheaderaddress">町名</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <input id="addr" class="width90p input_text01 validate[required]" placeholder="例：飯田橋" name="address2" type="text" style="background-color: rgb(255, 221, 221);">&nbsp;
+                            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="address_house" class="required">番地<span class="subheader">[半角数字ハイフン]</span></label>
+            </th>
+            <td class="submust">&nbsp;</td>
+            <td class="input">
+                <input class="width90p input_text01 validate[required,custom[numeric_and_hyphen]]" placeholder="例：4-7-11" name="address_house" type="text" id="address_house" style="background-color: rgb(255, 221, 221);">
+                &nbsp;
+                            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="address3" class="required"><span class="subheaderaddress">建物※部屋番号もご入力ください</span></label>
+            </th><td class="subnone">&nbsp;</td>
+            <td class="input">
+                <input class="input_text01 width90p" placeholder="例：カクタス飯田橋ビル10F" name="address3" type="text" id="address3">&nbsp;
+                            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="tel1" class="required">電話番号<span class="subheader">[半角数字]</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <input class="width90p input_text01 validate[required,custom[phone]]" placeholder="※ハイフンを入れずにご入力ください （例：0332211012)" name="tel1" type="text" id="tel1" style="background-color: rgb(255, 221, 221);">&nbsp;
+                            </td>
+        </tr>
+        <tr>
+           <th>
+               <label for="fax">FAX番号<span class="subheader">[半角数字]</span></label>
+           </th><td class="subnone">&nbsp;</td>
+           <td class="input">
+               <input class="width90p input_text01 validate[custom[phone]]" placeholder="※ハイフンを入れずにご入力ください （例：0332211012)" name="fax" type="text" id="fax">&nbsp;
+                          </td>
+        </tr>
+        <tr>
+            <th>
+            <label for="email1" class="required">メールアドレス<span class="subheader">[半角英数]</span></label>
+            </th>
+            <td class="submust">&nbsp;</td>
+            <td class="input">
+                <input class="width300 input_text01 validate[required,custom[email]]" name="email1" type="text" id="email1" style="background-color: rgb(255, 221, 221);" autocomplete="off" spellcheck="false">
+                <input name="original_email1" type="hidden">
+                                <span class="addNote">メールアドレスは連絡先とログインIDの兼用となります。</span>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="password" class="required">パスワード (6～20文字)<span class="subheader">[半角英数]</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <input class="input_text01 validate[required,minSize[6]]" id="passwd" placeholder="※パスワードには半角英数字のみ入力可能です" name="password" type="password" style="background-color: rgb(255, 221, 221);">
+                            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="password_confirmation" class="required">パスワード確認<span class="subheader">[半角英数]</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <input class="input_text01 validate[required,minSize[6],equals[passwd]]" name="password_confirmation" type="password" id="password_confirmation" style="background-color: rgb(255, 221, 221);">
+                                <span class="addNote">確認のため、手入力で再度ご入力ください。</span>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="newsletter_flg">お得なお知らせ</label>
+            </th><td>&nbsp;</td>
+            <td class="input">
+                <input id="c1" checked="checked" name="newsletter_flg" type="checkbox" value="1">
+                <label for="c1">受け取る</label><br>
+                &nbsp;※受け取りを希望されない方はチェックを外してください。&nbsp;
+                            </td>
+        </tr>
+        <tr id="deliveryInfoHead">
+            <th colspan="3"><h2 class="heading02 marg-t20">お届け先情報 
+                <small class="deliverySmall02">※記入しない場合は上記の登録住所に届きます。
+                <label class="shippingAddress_btn button02"><label for="checkboxShipping" class="deliverySmall02"><input class="toggleCheckbox02" id="checkboxShipping" name="checkboxShipping" type="checkbox" value="1">
+&nbsp;別の住所に届ける</label></label></small></h2>
+             </th>
+        </tr>
+        <tr class="delivInfo" style="display: none;">
+            <td colspan="3">
+                上記のご登録住所以外のお届け先をご希望の場合はこちらにご記入ください。
+
+            </td>
+        </tr>
+        <tr style="display: none;">
+            <th>
+                <label for="delivery_last_name" class="required">お名前<span class="subheader">[全角]</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <input class="width150 input_text01 validate[required]" placeholder="姓）" name="delivery_last_name" type="text" id="delivery_last_name">&nbsp;
+                <input class="width150 input_text01 validate[required]" placeholder="名）" name="delivery_first_name" type="text">
+                            </td>
+        </tr>
+        <tr style="display: none;">
+          <th>ご住所<span class="subheader"></span></th>
+          <td class="submust">&nbsp;</td>
+            <td class="input">
+                <div class="address">
+                    <span class="spText bold_sp"><label for="delivery_zip_code1" class="required">郵便番号<span class="subheader"></span></label></span>
+                    <input class="width100 input_text01 w70_sp validate[required,custom[number]]" id="zip2" name="delivery_zip_code1" type="tel" placeholder="住所自動入力">&nbsp;-
+                    <input class="width150 input_text01 w70_sp validate[required,custom[number]]" id="zip21" name="delivery_zip_code2" type="tel" maxlength="4">
+                                    </div>
+            </td>
+        </tr>
+        <tr style="display: none;">
+            <th>
+                <label for="delivery_prefecture_code" class="required"><span class="subheaderaddress">都道府県名</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <select id="pref2" class="select02 validate[required]" name="delivery_prefecture_code"><option value="" selected="selected">-- 選択してください --</option><option value="1">北海道</option><option value="2">青森県</option><option value="3">岩手県</option><option value="4">宮城県</option><option value="5">秋田県</option><option value="6">山形県</option><option value="7">福島県</option><option value="8">茨城県</option><option value="9">栃木県</option><option value="10">群馬県</option><option value="11">埼玉県</option><option value="12">千葉県</option><option value="13">東京都</option><option value="14">神奈川県</option><option value="15">新潟県</option><option value="16">富山県</option><option value="17">石川県</option><option value="18">福井県</option><option value="19">山梨県</option><option value="20">長野県</option><option value="21">岐阜県</option><option value="22">静岡県</option><option value="23">愛知県</option><option value="24">三重県</option><option value="25">滋賀県</option><option value="26">京都府</option><option value="27">大阪府</option><option value="28">兵庫県</option><option value="29">奈良県</option><option value="30">和歌山県</option><option value="31">鳥取県</option><option value="32">島根県</option><option value="33">岡山県</option><option value="34">広島県</option><option value="35">山口県</option><option value="36">徳島県</option><option value="37">香川県</option><option value="38">愛媛県</option><option value="39">高知県</option><option value="40">福岡県</option><option value="41">佐賀県</option><option value="42">長崎県</option><option value="43">熊本県</option><option value="44">大分県</option><option value="45">宮崎県</option><option value="46">鹿児島県</option><option value="47">沖縄県</option></select>&nbsp;
+                            </td>
+        </tr>
+        <tr style="display: none;">
+            <th>
+                <label for="delivery_address1" class="required"><span class="subheaderaddress">市区町村</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <input id="city2" class="width90p input_text01 validate[required]" placeholder="例：千代田区" name="delivery_address1" type="text">&nbsp;
+                            </td>
+        </tr>
+        <tr style="display: none;">
+            <th>
+                <label for="delivery_address2" class="required"><span class="subheaderaddress">町名</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <input id="addr2" class="width90p input_text01 validate[required]" placeholder="例：飯田橋" name="delivery_address2" type="text">&nbsp;
+                            </td>
+        </tr>
+        <tr style="display: none;">
+            <th>
+                <label for="delivery_address_house" class="required"><span class="subheaderaddress">番地</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <input id="addres_house" class="width90p input_text01 validate[required,custom[numeric_and_hyphen]]" placeholder="例：4-7-11" name="delivery_address_house" type="text">&nbsp;
+                            </td>
+        </tr>
+        <tr style="display: none;">
+            <th>
+                <label for="delivery_address3" class="required"><span class="subheaderaddress">建物※部屋番号もご入力ください</span></label>
+            </th><td class="subnone">&nbsp;</td>
+            <td class="input">
+                <input class="width90p input_text01" placeholder="例：カクタス飯田橋ビル10F" name="delivery_address3" type="text" id="delivery_address3">&nbsp;
+                            </td>
+        </tr>
+        <tr style="display: none;">
+            <th>
+                <label for="delivery_tel" class="required">電話番号<span class="subheader">[半角数字]</span></label>
+            </th><td class="submust">&nbsp;</td>
+            <td class="input">
+                <input class="width90p input_text01 validate[required,custom[phone]]" placeholder="※ハイフンを入れずにご入力ください （例：0332211012)" name="delivery_tel" type="text" id="delivery_tel">&nbsp;
+                            </td>
+        </tr>
+    </tbody>
+</table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+/**
+  * 注文者に入力した住所を送付情報にコピーする
+  */
+function copyAddressToDelivery() {
+    $(' table#deliveryInfo').find('input, select').each(function() {
+        var element = $(this);
+        if(element.attr('name').match(/delivery_/)) {
+            var name = element.attr('name').replace(/^delivery_/, '');
+            element.val($('[name="'+name+'"]').val());
+            if(name == 'tel') element.val($('[name="tel1"]').val());
+        }
+    });
+}
+
+$(function(){
+    jQuery('button.copy').on('click', copyAddressToDelivery);
+    $('.submit01').click(function(){ 
+        if($('#checkboxShipping').length && $('#checkboxShipping').is(':checked') === false){    
+            copyAddressToDelivery();               
+        }
+    })  
+    $('#checkboxShipping').on('change', hideShowDeliveryInfo);
+    hideShowDeliveryInfo();
+});
+function hideShowDeliveryInfo()
+{
+    var chkbxDelivery = $('#checkboxShipping').is(':checked'); 
+    $('#deliveryInfoHead ~tr').toggle(chkbxDelivery);
+}
+</script>
+
+<div class="myPage">
+    <div class="myParent">
+<section class="section01">
+                            <h2 class="heading02" id="paymentTypeHead">お支払い方法の選択 
+            <span class="notation">※クレジットカードなら手数料無料！</span> 
+            <span class="sub_notation">※代引き手数料 324円</span> 
+        </h2>
+        <table class="table_payment01">
+    <tbody><tr>
+    <th>
+        <span class="radio01" style="background-color: rgb(255, 221, 221);">
+            <label class="bold"><input onclick="selectDeliveryDisplay(1)" class="input_radio01" name="payment_type" type="radio" value="1">クレジットカード払い</label>
+        </span>
+    </th>
+    <td>
+        <ul class="ul_payment01">
+            <li>
+                <div class="card01">
+                                            <div class="caution">※クレジットカード情報のご入力は次のページとなります。</div>
+                                            <img src="/img/img_card01.gif" alt="クレジットカード払い">
+                        <p>※手数料は無料となります</p>
+                <!-- /card01 --></div>
+            </li>
+            <li>
+                <dl class="dl_payment01">
+                        <dt>▼お支払い回数</dt>
+                        <dd>一括払いのみ</dd>
+                        <input name="credit_card_split" type="hidden" value="10">
+                </dl>
+            </li>
+            <li>
+                <p class="checkbox01">
+                                        <input name="card_regist_flg" type="hidden" value="1">
+                    <label><input disabled="disabled" checked="checked" name="card_regist_flg" type="checkbox" value="1">クレジットカード情報を登録する</label>
+                                    </p>
+            </li>
+        </ul>
+    </td>
+</tr>
+    <tr id="rakutenPaymentType">
+    <th>
+    <span class="radio01" style="background-color: rgb(255, 221, 221);">
+        <label class="bold"><input onclick="selectDeliveryDisplay(15)" class="input_radio01" name="payment_type" type="radio" value="15">楽天ペイ</label>
+    </span>
+    </th>
+    <td>
+        <p>
+            <a href="https://checkout.rakuten.co.jp/" target="_blank">
+                <img ale="楽天ペイ" src="https://checkout.rakuten.co.jp/p/common/img/img_cardface_h7.gif" border="0">
+            </a><br>
+            いつもの楽天IDとパスワードを使ってスムーズなお支払いが可能です。<br .="">
+            楽天ポイントが貯まる・使える！「簡単」「あんしん」「お得」な楽天ペイをご利用ください。
+        </p>
+    </td>
+</tr>
+    <tr id="deferredPaymentType">
+    <th>
+    <span class="radio01" style="background-color: rgb(255, 221, 221);">
+        <label class="bold"><input onclick="selectDeliveryDisplay(14)" class="input_radio01" name="payment_type" type="radio" value="14">後払い</label>
+    </span>
+    </th>
+    <td>
+        <p>
+            詳しくは<a href="http://www.gmo-ps.com/customer_2/" class="tdU" target="_blank">こちら</a>
+            <br>
+             
+        </p>
+    </td>
+</tr>
+    <tr>
+    <th>
+    <span class="radio01" style="background-color: rgb(255, 221, 221);">
+        <label class="bold"><input onclick="selectDeliveryDisplay(2)" class="input_radio01" name="payment_type" type="radio" value="2">代金引換（手数料324円） </label>
+    </span>
+    </th>
+    <td><p>※お荷物と引き換えに、宅配便のドライバーに代金をお支払いいただく方法です。</p></td>
+</tr>
+    <tr id="carrierPaymentType">
+    <th>
+        <span class="radio01"><label class="bold">キャリア決済</label></span>
+    </th>
+    <td style="background-color: rgb(255, 221, 221);">
+    <label class=""><input onclick="selectDeliveryDisplay(3)" name="payment_type" type="radio" value="3">docomo </label>
+    <label class=""><input onclick="selectDeliveryDisplay(4)" name="payment_type" type="radio" value="4">au </label>
+    <label class=""><input onclick="selectDeliveryDisplay(5)" name="payment_type" type="radio" value="5">Softbank </label>
+    </td>
+</tr>
+    </tbody></table>
+</section>
+        <section class="section01">
+                                        <h2 class="heading02" id="shippingMethodHead">お届け方法の選択
+                    <span class="notation mail-free" style="display: inline;">※ポスト投函は定期初回が送料無料！</span>
+                    <span class="sub_notation cod-normal">※宅配便送料 648円</span>
+                    <span class="sub_notation cod-free" style="display: none;">※宅配便送料無料</span>
+                </h2>
+                        <table class="table_payment01">
+                                <tbody><tr id="selectDeliveryMail">
+                    <th>
+                        <span class="radio01" style="background-color: rgb(255, 221, 221);">
+                            <label><input id="shippingMethodMailRadio" name="shipping_method" type="radio" value="2">ポスト投函</label>
+                        </span>
+                    </th>
+                    <td><p>※ポスト投函のため、お受け取り時の在宅不要<br>※代金引換決済はご利用いただけません。</p></td>
+                </tr>
+                                <tr id="selectDeliveryParcel">
+                <th>
+                    <span class="radio01" style="background-color: rgb(255, 221, 221);">
+                        <label><input name="shipping_method" type="radio" value="1">宅配便</label>
+                    </span>
+                </th>
+                <td>
+                    <ul class="ul_payment01 type01" id="selectHopeDelivery">
+                        <li>
+                            <dl class="dl_payment01">
+                                <dt>▼時間帯指定</dt>
+                                <dd>
+                                    <div class="inputBox01">
+                                    <select class="" id="selectHopeDeliveryTime" name="delivery_time_id"><option value="1">指定なし</option><option value="2">午前中 （１２時まで）</option><option value="3">１２時～１４時</option><option value="4">１４時～１６時</option><option value="5">１６時～１８時</option><option value="6">１８時～２０時</option><option value="8">１８時～２１時</option><option value="9">１９時～２１時</option></select>
+                                    <!-- /inputBox01 --></div>
+                                    <p class="note02">※天候や交通状況によりお時間前後する可能性がございます。あらかじめご了承ください。</p>
+                                    <p class="note02 sysSelectHopeDeliveryComment">※ご指定のない場合は最短でのお届けとなります</p>
+                                                                            <p class="note02"> ※佐川急便での配送となります。</p>
+                                                                    </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </td>
+                </tr>
+            </tbody></table>
+        </section>
+                <section class="section01">
+            <h2 class="heading02" id="remarksHead">備考</h2>
+            <p>営業所止めの配送をご希望の場合、その他ご要望等ございましたら、こちらにご記入ください。</p>
+            <div><textarea class="textarea01" name="remarks" cols="50" rows="10"></textarea></div>
+                        <!-- PC ONLY -->
+            <p class="link01">&gt;&gt;&nbsp;<a href="http://www.sagawa-exp.co.jp/" target="_blank">佐川急便の営業所はコチラ</a>からご確認いただけます。</p> 
+            <p class="link01">&gt;&gt;&nbsp;<a href="http://sneko2.kuronekoyamato.co.jp/sneko2/contents/jsp/sn2/SNTPJS0010.jsp" target="_blank">ヤマト運輸の営業所はコチラ</a>からご確認いただけます。</p>
+            <!-- SP ONLY -->
+            <ul class="ul_delivery01 sp_only">
+                <li class="last"><a href="http://www.sagawa-exp.co.jp/" target="_blank"><span>佐川急便 営業所</span></a></li>
+                <li class="first"><a href="http://sneko2.kuronekoyamato.co.jp/sneko2/contents/jsp/sn2/SNTPJS0010.jsp" target="_blank"><span>ヤマト運輸 営業所</span></a></li>
+            </ul>
+        </section>
+                <div class="term_use" style="background-color: rgb(255, 221, 221);">
+    ご購入前に
+                    「<a href="/pp/index.html#privacypolicy" target="_blank"><u>個人情報取得について</u></a>」・
+            「<a href="/up/index.html" target="_blank"><u>利用規約</u></a>」・
+    「<a href="/guide/index.html" target="_blank"><u>ご利用ガイド</u></a>」を必ずお読み下さい。<br>
+        未成年者のお申込みにつきましては、法定代理人の同意を得ていることを確認します。<br><br>
+    <label for="c2">個人情報取得について及び利用規約に同意する</label>&nbsp;
+    <input id="c2" class="validate[required]" name="term_use" type="checkbox" value="1">
+    	<br>
+	<label for="personal_use_only">転売目的ではなく、個人使用のために購入</label>&nbsp;
+    <input id="term_use_personal_use" class="validate[required]" checked="checked" name="term_use_personal_use" type="checkbox" value="1">
+    </div>
+<script>
+$("#term_use_personal_use").on("click touch press", function (e) {
+    event.preventDefault();
+    event.stopPropagation();
+    
+    return false;
+});
+</script>
+        <section>
+            <div class="buttonBox01 buttonBoxCenter">
+                    <div class="submitBox01">
+                        <faimgdiv id="execute_err"><a id="execute_FormAssist_cssbottom_submit" style="text-decoration:none"><div id="execute_fa_tag" style="background-color: #ff0000;border-radius: 3px; text-align:center;height: 52px; line-height:52px;width: 320px;margin: 10px auto;font-size: 16px;text-decoration: none;font-style:normal;font-weight:bold;color: #ffffff;"><div id="execute_fa_clc" style="cursor:pointer;"><span style="">未入力項目が</span>20個あります。</div></div></a></faimgdiv><input name="execute" id="execute" class="submit01" type="submit" value="次に進む" style="display: none;">
+                        <input id="order_type" name="order_type" type="hidden" value="2">
+                    <!-- /submitBox01 --></div>
+            <!-- /buttonBox01 --></div>
+        </section>
+        <input type="hidden" name="item_changed" id="item_changed" value="0">
+        <input id="fraudbuster" name="fraudbuster" type="hidden" value="OK;:Mozilla;:undefined;:Netscape;:5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36;:undefined;:finebase.jp#20190319161358cOyKS;:true;:undefined;:finebase.jp;:undefined;:https://finebase.jp/hmb_tab.html;:finebase.jp;:false;:ja;:1560312466805;:pdf_pdf____;:true;:undefined;:/hmb_tab.html;:MacIntel;:Chrome PDF Plugin-undefined_Chrome PDF Viewer-undefined_Native Client-undefined;:;:20030107;:;:undefined;:undefined;:24;:900;:1440;:undefined;:2019/6/12 13:07:46;:-540;:undefined;:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36;:undefined;:undefined;:undefined">
+        <input id="old_delivery_date" type="hidden">
+        <input id="old_first_purchase_date" type="hidden">
+        <script type="text/javascript" src="//fraud-buster.appspot.com/js/fraudbuster.js"></script>
+        <script type="text/javascript">
+            FREE_SHIPPING = 0;
+            FREE_MAIL_SHIPPING = 0;
+        </script>
+    </div>
+</div>
+</form>
+
+</div>
+
+
+<!-- ** LAMPCHAT ** - widget script tag -->
+<script id="lampchat-widget" src="https://bed70eacfe83324fc87f7b30fc50204a.staging.lampchat.io//widgets/widgetv3.js" fgid="eWKZa7H5EFs" ></script>
+</body>
+</html>
