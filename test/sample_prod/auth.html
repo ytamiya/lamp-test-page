@@ -86,10 +86,21 @@
 <!--/container-->
 
 <!-- ---------------作っていく場所----------------- -->
+<script>
+  window.LampchatSetting = {
+    auth_user_setting_id: "aLnUtxlvKDkQ",
+    auth_id: "123", // ユニークキーに設定した値(例.実際は変数でお渡しください)
+    auth_hash: "380e173a79b846e372de2c3b9f3dae0342ff3f5af6e6c055dc096a317fd81f87", // auth_idをハッシュ化した値
+    name: "テスト認証ユーザー", // 設定したパラメータキーの値を挿入
+    company_name: "テスト会社名", // 設定したパラメータキーの値を挿入
+  }
+  </script>
+  <!-- ** LAMPCHAT ** - widget script tag -->
+  <script id="lampchat-widget" src="https://lampchat.io/widgets/widgetv3.js" fgid="wEo0axHJcLk" ></script>
 <!-- ---------------END 作っていく場所----------------- -->
 
 <!-- ---------------完成したもの----------------- -->
-<script>
+<!-- <script>
   window.LampchatSetting = {
     auth_user_setting_id: "aLnUtxlvKDkQ",
     auth_id: "123", // ユニークキーに設定した値(例.実際は変数でお渡しください)
@@ -97,9 +108,9 @@
     name: "AUTHテスト",
     company_name: "AUTH株式会社",
   }
-</script>
+</script> -->
 <!-- ** LAMPCHAT ** - widget script tag -->
-<script id="lampchat-widget" src="https://lampchat.io/widgets/widgetv3.js" fgid="wEo0axHJcLk" ></script>
+<!-- <script id="lampchat-widget" src="https://lampchat.io/widgets/widgetv3.js" fgid="wEo0axHJcLk" ></script> -->
 <!-- ---------------END 完成したもの----------------- -->
 
 </body>
