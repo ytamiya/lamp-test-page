@@ -18,7 +18,7 @@
     <div id="home" class="top-section">
       <div class="inner-bg">
       <header>
-      <div class="container">
+      <div claigiss="container">
         <div class="header-title">
           <a class="header-logo" href="#home">Brocante Inc.</a>
         </div>
@@ -118,6 +118,8 @@
       </div>
     </div>
 
+    <a class="lampchat-link" href="https://test.lampchat.io/r_gwezlatgs?auuid={auuid}">ここからリンク</a>
+    <a class="lampchat-link">ここからリンク</a>
     
     <footer>
         <div class="container">
@@ -135,6 +137,22 @@
 
     </footer>
     <!-- ** LAMPCHAT ** - widget script tag -->
-    <script id="lampchat-widget" src="https://bed70eacfe83324fc87f7b30fc50204a.test.lampchat.io/widgets/widgetv3.js" fgid="1CguFJqzBMU" ></script>
+    <!-- <script>
+    window.LampchatSetting = {
+      auth_user_setting_id: "1Hse7BMGJy6g",
+      auth_id: "1", //ユニークキーに設定した値
+      auth_hash: "755e5bb95e503a568b82f81af8f34b41acbf55c3d1c5fa7c3049546b17df63dd", // ユニークキーをハッシュ化した値
+      test_id: "xxx", // user情報に追加する値の例
+    };
+    </script> -->
+    <script>
+      window.LampchatSetting = {
+        auth_user_setting_id: "FQImt0PUHCg",
+        auth_id: "123", // ユニークキーに設定した値(例.実際は変数でお渡しください)
+        auth_hash: "b6815b152f00105ed73d39ce437afd8ca696bf9e8b6b521cb335110552553ffd", // auth_idをハッシュ化した値
+      }
+      </script>
+      <!-- ** LAMPCHAT ** - widget script tag -->
+      <script id="lampchat-widget" src="https://test.lampchat.io/widgets/widgetv3.js" fgid="1CguFJqzBMU" ></script>
   </body>
 </html>
